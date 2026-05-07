@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f5f7;
+  color: #333;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #2f3248, #1c1e2c);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background: rgba(255,255,255,0.1);
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+/* CONTENT */
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* TOOLBAR */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  background: #0078d4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.danger {
+  background: #d9534f;
+}
+
+button.primary {
+  background: #0078d4;
+}
+
+.link-btn {
+  background: none;
+  color: #0078d4;
+  padding: 0;
+}
+
+.link-btn.danger {
+  color: #d9534f;
+}
+
+/* TABLE */
+.table-container {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 5px;
+}
+
+/* PAGINATION */
+.pagination {
+  padding: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+
+/* FOOTER */
+.footer {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #666;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
