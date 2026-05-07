@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Risk Analyst Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="assets/manulife-logo.png" alt="Manulife Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li class="active">RA Upload</li>
+        <li>Manual Adjustment</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Risk Analyst Upload</h1>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="content">
+
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+        <div class="left">
+          <button class="primary">Upload</button>
+        </div>
+        <div class="right">
+          <button>Bulk Set Active</button>
+          <button class="danger">Bulk Delete</button>
+        </div>
+      </div>
+
+      <!-- TABLE -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th>File Name</th>
+              <th>Process</th>
+              <th>Valuation Date</th>
+              <th>Uploaded By</th>
+              <th>Action</th>
+            </tr>
+
+            <!-- FILTER ROW -->
+            <tr class="filters">
+              <th></th>
+              <th><input type="text" placeholder="Contains"></th>
+              <th>
+                <select>
+                  <option>Process</option>
+                  <option>OE</option>
+                </select>
+              </th>
+              <th><input type="date"></th>
+              <th><input type="text" placeholder="Contains"></th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>RDA_EC_LowerBounds</td>
+              <td>OE</td>
+              <td>202601</td>
+              <td>N/A</td>
+              <td>
+                <button class="link-btn">Upload</button>
+                <button class="link-btn danger">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>RDA_EC_UpperBounds</td>
+              <td>OE</td>
+              <td>202601</td>
+              <td>N/A</td>
+              <td>
+                <button class="link-btn">Upload</button>
+                <button class="link-btn danger">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>RefForCode_YYYYMMDD</td>
+              <td>OE</td>
+              <td>202601</td>
+              <td>N/A</td>
+              <td>
+                <button class="link-btn">Upload</button>
+                <button class="link-btn danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+          Rows per page: 25 | 1–3 of 3
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 1999–2026 The Manufacturers Life Insurance Company
+    </footer>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
